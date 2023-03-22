@@ -1,0 +1,9 @@
+version: "3"
+
+services:
+  twilio-sms-php:
+    build: ./php
+    image: twilio/sms/php
+    env_file: ./php/.env
+    volumes:
+      - ./php:/app
