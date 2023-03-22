@@ -1,5 +1,5 @@
 FROM composer:lts
 
-COPY compose.json .
+COPY composer.json .
 
 RUN composer install
